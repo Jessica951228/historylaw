@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="律史|你能在古代生存下來嗎?"/>
+        <meta name="author" content="臻臻"/>
+        <meta name="keywords" content="古代,法律,歷史,生存"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>我的第二個網頁</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='law.css') }}">
+    </head>
+    <body>
+
+        <h1>律史|你能在古代生存下來嗎?</h1>
+        <!-- 題目顯示區 -->
+        <div id="case-container"></div>
+
+        <!-- 題目操作按鈕 -->
+        <div style="margin-top: 20px;">
+        <button onclick="loadRandomCase()">隨機一題</button>
+        </div>
+
+        <button id="music-toggle" onclick="toggleMusic()">🎵 背景音樂開關</button>
+        <audio id="bg-music" loop>
+        <source src="{{ url_for('static', filename='ed_azure_dragon.mp3') }}" type="audio/mpeg">
+        </audio>
+
+        <script src="{{ url_for('static', filename='law.js') }}"></script>
+    
+    </body>
