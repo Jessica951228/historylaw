@@ -79,12 +79,27 @@ button {
 }
 
 /* 手機螢幕更小時調整字體大小 */
-@media (max-width: 400px) {
-  body {
-    padding: 5px;
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+    text-align: center;
   }
 
-  button {
-    font-size: 0.9rem;
+  .button {
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+    font-size: 1em;
+  }
+
+  .case-box {
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  audio {
+    width: 90%;
+    margin: 1em auto;
+    display: block;
   }
 }
