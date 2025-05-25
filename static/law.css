@@ -65,16 +65,17 @@ button {
 
 /* 音樂按鈕固定右下角 */
 #music-btn {
-  position: fixed;
+ osition: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 12px;
-  border-radius: 50%;
-  font-size: 24px;
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
   z-index: 1000;
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* 手機螢幕更小時調整字體大小 */
