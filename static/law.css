@@ -32,3 +32,58 @@ body {
   background-position: center center; /* 居中 */
   color: #000;                    /* 可調整文字顏色避免被背景吃掉 */
 }
+
+/* 基本排版，寬度限制 */
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-family: Arial, sans-serif;
+  background-size: cover; /* 讓背景圖覆蓋 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#case-container {
+  max-width: 600px;  /* 限制最大寬度 */
+  margin: 20px auto; /* 置中 */
+  padding: 15px;
+  background-color: rgba(255,255,255,0.9);
+  border-radius: 8px;
+}
+
+/* 按鈕樣式 */
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  margin: 5px 0;
+  width: 100%;  /* 手機上按鈕寬度滿版 */
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 音樂按鈕固定右下角 */
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  z-index: 1000;
+}
+
+/* 手機螢幕更小時調整字體大小 */
+@media (max-width: 400px) {
+  body {
+    padding: 5px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}

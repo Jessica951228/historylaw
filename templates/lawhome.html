@@ -6,7 +6,7 @@
         <meta name="author" content="臻臻"/>
         <meta name="keywords" content="古代,法律,歷史,生存"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>我的第二個網頁</title>
+        <title>律史|你能在古代生存下來嗎?</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='law.css') }}">
     </head>
     <body>
@@ -20,7 +20,7 @@
         <button onclick="loadRandomCase()">隨機一題</button>
         </div>
 
-        <button id="music-toggle" onclick="toggleMusic()">🎵 背景音樂開關</button>
+        <button id="music-btn" onclick="toggleMusic()">🎵</button>
         <audio id="bg-music" loop>
         <source src="{{ url_for('static', filename='ed_azure_dragon.mp3') }}" type="audio/mpeg">
         </audio>
